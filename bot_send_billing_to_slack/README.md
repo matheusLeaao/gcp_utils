@@ -18,7 +18,7 @@ Projeto designado para o desenvolvimento de bot que envia o billing de um determ
 - Habilitar o account Management para o Projeto (para obter o Billing Account ID)
 - Billing Export
 - Habilitar o Export Billing para um determinado Dataset (criar Dataset para que o billing seja exportado e armazenado)
-- <PROJECT_ID>.<DATASET>.gcp_billing_export_v1_<BILLING_ACCOUNT_ID>
+- PROJECT_ID.DATASET.gcp_billing_export_v1_BILLING_ACCOUNT_ID
 - criar a Function com trigger type HTTP
 - Deploy da Function (OK status)
 - Testar a saída (acessar a URL da function, é para mostrar o billing no navegador e enviar a mensagem ao Slack)
