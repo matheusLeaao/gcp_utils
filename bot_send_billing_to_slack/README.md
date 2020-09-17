@@ -1,4 +1,4 @@
-# gcp_utils
+# bot_send_billing_to_slack
 # Matheus Lion
 
 ### Celular: 
@@ -22,5 +22,5 @@ Projeto designado para o desenvolvimento de bot que envia o billing de um determ
 - criar a Function com trigger type HTTP
 - Deploy da Function (OK status)
 - Testar a saída (acessar a URL da function, é para mostrar o billing no navegador e enviar a mensagem ao Slack)
-- Criar o Job Scheduler (Configurar a frequencia desejada em unix-cron format https://crontab.guru/,Timezone: Brasilia Standar Time (BRT), Target: HTTP, URL: function_url, HTTP method: POST)
-- GG Easy lek
+- Criar o Job Scheduler (Configurar a frequencia desejada em unix-cron format [Crontab](https://crontab.guru/), Timezone: Brasilia Standar Time (BRT), Target: HTTP, URL: function_url, HTTP method: POST)
+- GG Easy lek! Cabô.
