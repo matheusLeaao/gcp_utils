@@ -11,7 +11,7 @@ https://www.facebook.com/matheus.leao.5?ref=bookmarks
 https://www.linkedin.com/in/matheus-le%C3%A3o-622151162/
 
 ## Projeto voltado a:
-Projeto designado para o desenvolvimento de bot que envia o billing de um determinado horário da conta da GCP.
+Projeto designado para o desenvolvimento de bot que envia o billing de um determinado horário da conta da GCP. De uma olhada no [Fluxo](https://github.com/matheusLeaao/gcp_utils/blob/master/bot_send_billing_to_slack/FunctionBillilng.png) de funcionamento da Function.
 
 ## Passo a passo para implementação
 - Acessar Biling
