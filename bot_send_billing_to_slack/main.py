@@ -22,7 +22,7 @@ def main(request):
    values = ""
    client = bigquery.Client() 
    # Valores procurados 
-   query_string = 'SELECT invoice.month, cost_type, SUM(cost) + SUM(IFNULL((SELECT SUM(c.amount) FROM  UNNEST(credits) c), 0)) AS total, (SUM(CAST(cost * 1000000 AS int64)) + SUM(IFNULL((SELECT SUM(CAST(c.amount * 1000000 as int64)) FROM UNNEST(credits) c), 0))) / 1000000 AS total_exact FROM `space-sheep-dwh.audits.gcp_billing_export_v1_016C3E_40DEAC_58C3D0` WHERE project.id = "forhumans-gameservices" AND invoice.month = "'+periodo+'" GROUP BY 1, 2 ORDER BY 1 ASC, 2 ASC;'
+   query_string = 'SELECT invoice.month, cost_type, SUM(cost) + SUM(IFNULL((SELECT SUM(c.amount) FROM  UNNEST(credits) c), 0)) AS total, (SUM(CAST(cost * 1000000 AS int64)) + SUM(IFNULL((SELECT SUM(CAST(c.amount * 1000000 as int64)) FROM UNNEST(credits) c), 0))) / 1000000 AS total_exact FROM `<project_ID>.<dataset>.<ID_billing_Account>` WHERE project.id = "<project_name>" AND invoice.month = "'+periodo+'" GROUP BY 1, 2 ORDER BY 1 ASC, 2 ASC;'
    query_job = client.query(query_string)
    results = query_job.result()
 
